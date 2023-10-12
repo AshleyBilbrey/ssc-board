@@ -1,0 +1,20 @@
+{
+  "name": "ssc-board",
+  "version": "1.0.0",
+  "description": "A website to display information for the UC Davis Student Startup Center.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Ashley Bilbrey",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
