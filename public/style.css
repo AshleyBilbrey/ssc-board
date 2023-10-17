@@ -22,7 +22,10 @@ body {
 #logo {
     height: 20vh;
     padding: 3vh;
-    margin-top: 10vh;
+}
+
+#main-top {
+    margin-top: 7vh;
 }
 
 #main-bottom {
