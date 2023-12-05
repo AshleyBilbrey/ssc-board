@@ -6,11 +6,11 @@ const holidays = [
 ]
 const weeklyHours = [
     {open: false},
-    {open: true, open: {hour: 13, min: 0}, close: {hour: 19, min: 0}},
-    {open: true, open: {hour: 12, min: 0}, close: {hour: 19, min: 0}},
-    {open: true, open: {hour: 12, min: 0}, close: {hour: 19, min: 0}},
-    {open: true, open: {hour: 12, min: 0}, close: {hour: 19, min: 0}},
-    {open: true, open: {hour: 12, min: 0}, close: {hour: 17, min: 0}},
+    {open: true, openTime: {hour: 13, min: 0}, closeTime: {hour: 19, min: 0}},
+    {open: true, openTime: {hour: 12, min: 0}, closeTime: {hour: 19, min: 0}},
+    {open: true, openTime: {hour: 12, min: 0}, closeTime: {hour: 19, min: 0}},
+    {open: true, openTime: {hour: 12, min: 0}, closeTime: {hour: 19, min: 0}},
+    {open: true, openTime: {hour: 12, min: 0}, closeTime: {hour: 17, min: 0}},
     {open: false}
 ]
 
@@ -58,8 +58,9 @@ function inHoliday(date) {
  */
 function inDailyHours(date) {
     const dailyHours = weeklyHours[date.getDay()]
-    const todayOpen = new Date(date.getFullYear(), date.getMonth(), date.getDate(), dailyHours.open.hour, dailyHours.open.min)
-    const todayClose = new Date(date.getFullYear(), date.getMonth(), date.getDate(), dailyHours.close.hour, dailyHours.close.min)
+    if(dailyHours.open == false) return false;
+    const todayOpen = new Date(date.getFullYear(), date.getMonth(), date.getDate(), dailyHours.openTime.hour, dailyHours.openTime.min)
+    const todayClose = new Date(date.getFullYear(), date.getMonth(), date.getDate(), dailyHours.closeTime.hour, dailyHours.closeTime.min)
     if(date > todayOpen && date < todayClose) return true;
     return false;
 }
