@@ -20,12 +20,12 @@ body {
 }
 
 #logo {
-    height: 20vh;
-    padding: 3vh;
+    height: 15vh;
+    padding: 1vh;
 }
 
 #main-top {
-    margin-top: 7vh;
+    margin-top: 2vh;
 }
 
 #main-bottom {
@@ -38,7 +38,8 @@ body {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 p {
@@ -51,11 +52,14 @@ p {
     border-radius: 20px;
 }
 
+#calEmbed {
+    width: 40vw;
+}
+
 #main-bottom-left, #main-bottom-right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2vh;
 }
 
 .alignCol {
