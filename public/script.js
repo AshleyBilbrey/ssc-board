@@ -1,8 +1,8 @@
-const quarterEnd = new Date(2023, 11, 8, 23, 59, 0, 0)
-const quarterStart = new Date(2023, 9, 16, 0, 0, 0, 0)
+const quarterEnd = new Date(2024, 2, 15, 23, 59, 0, 0)
+const quarterStart = new Date(2024, 0, 8, 0, 0, 0, 0)
 const holidays = [
-    {year: 2023, month: 10, day: 23},
-    {year: 2023, month: 10, day: 24},
+    {year: 2024, month: 0, day: 15},
+    {year: 2024, month: 1, day: 19},
 ]
 const weeklyHours = [
     {open: false},
