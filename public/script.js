@@ -1,12 +1,11 @@
-const quarterEnd = new Date(2024, 2, 15, 23, 59, 0, 0)
-const quarterStart = new Date(2024, 0, 8, 0, 0, 0, 0)
+const quarterEnd = new Date(2024, 5, 6, 23, 59, 0, 0)
+const quarterStart = new Date(2024, 3, 1, 0, 0, 0, 0)
 const holidays = [
-    {year: 2024, month: 0, day: 15},
-    {year: 2024, month: 1, day: 19},
+    {year: 2024, month: 0, day: 15}
 ]
 const weeklyHours = [
     {open: false},
-    {open: true, openTime: {hour: 13, min: 0}, closeTime: {hour: 19, min: 0}},
+    {open: true, openTime: {hour: 13, min: 30}, closeTime: {hour: 19, min: 0}},
     {open: true, openTime: {hour: 12, min: 0}, closeTime: {hour: 19, min: 0}},
     {open: true, openTime: {hour: 12, min: 0}, closeTime: {hour: 19, min: 0}},
     {open: true, openTime: {hour: 12, min: 0}, closeTime: {hour: 19, min: 0}},
